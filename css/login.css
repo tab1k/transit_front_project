@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+}
+
+/* делим страница на 2 */
+
+.main {
+    display: grid;
+    grid-template-areas:
+        "lf f";
+    grid-template-columns: 3fr 2fr;
+}
+
+/* левая сторона сайта */
+
+.left-s {
+    grid-area: "lf";
+    background: #1F4989;
+    backdrop-filter: blur(12px);
+    height: 100vh;
+}
+
+/* правая сторона сайта */
+
+.rigth-s {
+    grid-area: "f";
+}
+
+/* слайдер */
+
+.adaptivSlayder {
+    position: relative;
+    margin: 25% auto;
+    box-shadow: 0 9px 18px -4px rgba(0, 0, 0, 0.69);
+    border-radius: 20px;
+    width: 500px;
+}
+
+.adaptivSlayder input[name="kadoves"] {
+    display: none;
+}
+
+/* dots */
+
+.kadoves {
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    text-align: center;
+    width: 100%;
+}
+
+.kadoves label {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    cursor: pointer;
+    margin: 0 2px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .7);
+    border-radius: 55%;
+    border: 4px solid #6F74DD;
+    background-color: #6F74DD;
+}
+
+
+#slaid1:checked~.kadoves label[for="slaid1"] {
+    background-color: white;
+    border-radius: 20px;
+}
+
+#slaid2:checked~.kadoves label[for="slaid2"] {
+    background-color: white;
+    border-radius: 20px;
+}
+
+#slaid3:checked~.kadoves label[for="slaid3"] {
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.adaptivSlayderlasekun {
+    overflow: hidden;
+}
+
+/* задаем плавное появление слайда */
+
+.abusteku-deagulus {
+    display: flex;
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.abusteku-deagulus img {
+    width: 100%;
+}
+
+/* задаем появление */
+
+#slaid1:checked~.adaptivSlayderlasekun .abusteku-deagulus {
+    transform: translate(0);
+}
+
+#slaid2:checked~.adaptivSlayderlasekun .abusteku-deagulus {
+    transform: translateX(-100%);
+}
+
+#slaid3:checked~.adaptivSlayderlasekun .abusteku-deagulus {
+
+    transform: translateX(-200%);
+
+}
+
+/* правая сторона */
+
+.rigth-s {
+    align-self: center;
+    justify-self: center;
+}
+
+/* задаем стиль формы */
+
+.form_container {
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 50px 40px 20px 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
+        0px 59px 36px rgba(0, 0, 0, 0.05), 0px 26px 26px rgba(0, 0, 0, 0.09),
+        0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 11px;
+    font-family: "Inter", sans-serif;
+}
+
+/* задаем стиль контейнера с заголовком */
+
+.title_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* задаем стиль заголовка */
+
+.title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #212121;
+}
+
+/* задаем стиль родителю input */
+
+.input_container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* задаем стиль иконке в input */
+
+.icon {
+    width: 20px;
+    position: absolute;
+    z-index: 99;
+    left: 12px;
+    bottom: 9px;
+}
+
+/* задаем стиль названию input */
+
+.input_label {
+    font-size: 0.75rem;
+    color: #8B8E98;
+    font-weight: 600;
+}
+
+/* задаем стиль input */
+
+.input_field {
+    width: auto;
+    height: 40px;
+    padding-left:40px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #e5e5e5;
+    filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+/* задаем стиль input при focus */
+
+.input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #242424;
+    background-color: transparent;
+}
+
+/* задаем стиль login кнопке */
+
+.sign-in_btn {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: #1F4989;
+    border-radius: 40px;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* задаем стиль ---or--- */
+
+.separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #8B8E98;
+}
+
+.separator .line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: #e8e8e8;
+}
+
+/* задаем стиль родителю кнопкам или */
+
+.or-sign-in-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* задаем стиль кнопке login google */
+
+.sign-in_ggl {
+    width: 200px;
+    height: 40px;
+    gap: 10px;
+    background: #ffffff;
+    border-radius: 40px;
+    outline: none;
+    color: #3949AB;
+    border: 1px solid #3949AB;
+    filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+    cursor: pointer;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* задаем стиль изображение в кнопке login google */
+
+.sign-in_ggl img {
+    width: 24px;
+}
+
+/* задаем стиль кнопке login gitlab */
+
+.sign-in_gitlab {
+    width: 200px;
+    height: 40px;
+    gap: 10px;
+    background: #ffffff;
+    border-radius: 40px;
+    outline: none;
+    color: #3949AB;
+    border: 1px solid #3949AB;
+    filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+    cursor: pointer;
+    margin-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* задаем стиль изображение в кнопке login gitlab */
+
+.sign-in_gitlab img {
+    width: 19.2px;
+    height: 19.2px;
+}
+
+/* задаем стиль тексту нету аккаунта? */
+
+.note {
+    font-size: 0.75rem;
+    color: #8B8E98;
+    text-decoration: underline;
+}
+
+/* задаем стиль кнопке log in Администрация*/
+
+.sign-in_admin{
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+    background: #ffffff;
+    border-radius: 40px;
+    outline: none;
+    color: #3949AB;
+    border: 1px solid #3949AB;
+    filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* задаем стиль кнопке назад*/
+
+.sign-in_back{
+    width: 100px;
+    height: 40px;
+    gap: 10px;
+    background: #ffffff;
+    border-radius: 40px;
+    outline: none;
+    color: #3949AB;
+    border: 1px solid #3949AB;
+    filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
