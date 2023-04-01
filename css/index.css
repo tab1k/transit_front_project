@@ -1,0 +1,67 @@
+/* BODY */
+
+body {
+  background-color: #22549E;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+
+}
+
+/* ----------------------------------------- */
+
+/* ALL PAGE */
+
+.all_page {
+  width: 100%;
+  display: flex;
+}
+
+.all_page .side_bar {
+  width: 20%;
+  margin: 20px 0px 20px 20px;
+}
+
+.all_page .content {
+  background-color: white;
+  border-radius: 48px;
+  height: 1070px;
+  width: 77%;
+  margin: 20px;
+}
+
+
+/* ----------------------------------------- */
+
+/* SIDE BAR */
+
+.side_bar {
+  text-align: center;
+
+}
+
+/* SIDE BAR - LOGO */
+
+a {
+  color: white;
+  font-family: Roboto;
+  text-decoration: none;
+}
+
+.side_bar_logo_settings {
+  display: flex;
+}
+
+/* SIDE BAR - LINKS */
+
+.side_bar_general {
+  display: flex;
+}
+
+
+
+.side_bar_courses {
+  display: flex;
+}
