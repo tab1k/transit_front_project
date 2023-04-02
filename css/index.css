@@ -272,7 +272,7 @@ input:-webkit-autofill:active {
 /* training_sectors_images img style */
 .training_sectors_images img {
     width: 500px;
-    height: 300px;
+    height: 350px;
     background-size: cover;
 }
 
@@ -310,7 +310,7 @@ input:-webkit-autofill:active {
     overflow: hidden;
     position: relative;
     width: 960px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .slider::before,
