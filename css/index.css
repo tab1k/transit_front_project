@@ -6,8 +6,6 @@ body {
     padding: 0;
 }
 
-h1 {}
-
 /* ----------------------------------------- */
 
 /* ALL PAGE */
@@ -24,7 +22,7 @@ h1 {}
 
 .all_page .content {
     background-color: white;
-    border-radius: 48px;
+    border-radius: 20px;
     height: 100%;
     width: 77%;
     margin: 20px;
@@ -107,6 +105,20 @@ a {
     height: 100%;
 }
 
+.side_bar_timeTable{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+  
+  .side_bar_settings{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+
 
 /* SEARCH INPUT */
 
@@ -141,7 +153,6 @@ a {
     isolation: isolate;
     width: 90%;
     height: 37px;
-    margin-left: 2%;
 }
 
 /* a fancy bg for showing background and border when focus. */
@@ -178,11 +189,7 @@ label {
     left: var(--inline-padding-of-input);
 }
 
-/* svg -- size */
-svg {
-    width: 17px;
-    display: block;
-}
+
 
 /* styling of close button */
 .close-btn {
