@@ -97,7 +97,7 @@ a {
 }
 
 .support-img {
-    margin-top: 50%;
+    margin-top: 25%;
     align-items: center;
     justify-content: center;
 }
@@ -106,6 +106,20 @@ a {
     width: 60%;
     height: 100%;
 }
+
+.side_bar_timeTable{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+  
+  .side_bar_settings{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
 
 
 /* SEARCH INPUT */
