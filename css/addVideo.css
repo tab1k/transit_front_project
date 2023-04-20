@@ -1,0 +1,372 @@
+/* BODY */
+
+body {
+    background-color: #22549E;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------- */
+
+/* ALL PAGE */
+
+.all_page {
+    width: 100%;
+    display: flex;
+}
+
+.all_page .side_bar {
+    width: 20%;
+    margin: 20px 0px 20px 20px;
+}
+
+.all_page .content {
+    background-color: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 77%;
+    margin: 20px;
+}
+
+
+
+/* ----------------------------------------- */
+
+/* SIDE BAR */
+
+.side_bar {
+    text-align: center;
+
+}
+
+/* SIDE BAR - LOGO */
+
+a {
+    color: white;
+    font-family: Roboto;
+    text-decoration: none;
+}
+
+.side_bar_logo_settings {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.side_bar_logo_text {
+    margin-left: 5%;
+    font-size: 24px;
+    font-weight: medium;
+}
+
+/* SIDE BAR - LINKS */
+
+.side_bar_links {
+    margin-top: 30%;
+}
+
+.side_bar_img {
+    margin-left: 5%;
+}
+
+.side_bar_text {
+    margin-left: 5%;
+    font-size: 100%;
+}
+
+.side_bar_courses {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    background-color: white;
+    width: 110%;
+    border-radius: 20px 0 0 20px;
+}
+
+.side_bar_courses p a {
+    color: #FB6D3A;
+}
+
+.side_bar_book {
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.support-img {
+    margin-top: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-img img {
+    width: 60%;
+    height: 100%;
+}
+
+.side_bar_timeTable {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.side_bar_settings {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+/* main style */
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.virtualLearning {
+    margin-top: 10%;
+    width: 250px;
+    height: 50px;
+    background: #1F4989;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.virtualLearning p {
+    padding-left: 10%;
+}
+
+.virtualLearning img {
+    padding-left: 5%;
+}
+
+.add {
+    color: #0067F5;
+    font-size: 14px;
+    margin-top: 10%;
+}
+
+/* lesson number */
+
+.lnumber {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* addTheme */
+.addThemeInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* choose file */
+
+.container {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 5px;
+    background-color: rgba(0, 110, 255, 0.041);
+}
+
+.headerAddVideo {
+    flex: 1;
+    width: 100%;
+    border: 2px dashed royalblue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headerAddVideo svg {
+    height: 100px;
+}
+
+.headerAddVideo p {
+    text-align: center;
+    color: black;
+}
+
+.footer {
+    background-color: rgba(0, 110, 255, 0.075);
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+    border: none;
+}
+
+.footer svg {
+    height: 130%;
+    fill: royalblue;
+    background-color: rgba(70, 66, 66, 0.103);
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.205);
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+}
+
+#file {
+    display: none;
+}
+
+
+/* button style */
+
+button {
+    background: #0078C2;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+}
+
+/* inputs style */
+
+input {
+    border: 1px solid #0067F5;
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    outline: none;
+}
+
+/* textarea style */
+
+textarea {
+    border: 1px solid #0067F5;
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    outline: none;
+}
+
+/* about lesson style */
+
+.aboutLesson {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutLesson textarea {
+    width: 70%;
+    height: 150px;
+    resize: none;
+}
+
+/* zoom link style */
+
+.zoomLink input {
+    width: 100%;
+    height: 20px;
+}
+
+/* home work style */
+
+.homeWork input {
+    width: 100%;
+    height: 20px;
+}
+
+.addThemeInput input {
+    width: 70%;
+    height: 20px;
+}
+
+.saveBtn {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.saveBtn button {
+    width: 40%;
+    height: 35px;
+}
+
+
+/* test */
+.test {
+    margin-top: 13%;
+}
+
+.testDiv {
+    color: #0067F5;
+    text-align: center;
+    display: grid;
+}
+
+.testDiv h2 {
+    font-size: 20px;
+}
+
+.testDiv hr {
+    background-color: #0067F5;
+    height: 1px;
+    width: 400px;
+}
+
+/* vertifictaion test */
+
+.vertificationTest {
+    display: flex;
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    width: 100%;
+    height: 5%;
+    align-items: center;
+    color:#0067F5;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.vertificationTest p{
+    padding-left: 2%;
+}
+
+.vertificationTest svg{
+    width: 15px;
+    height: 15px;
+    padding-right: 2%;
+}
+
+.checkingBtn{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    text-align: center;
+}
+.checkingBtn p{
+    margin-top: 20%;
+}
+.checkingBtn button{
+    width: 250px;
+    height: 40px;
+    margin-top: 20%;
+}

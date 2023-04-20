@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/adminLogin.css">
     <title>Log in</title>
 </head>
 
@@ -14,42 +14,13 @@
 
     <div class="main">
 
-        <!-- левая сторона сайта -->
-
-        <div class="left-s">
-
-            <!-- слайдер -->
-
-            <div class="adaptivSlayder">
-                <input type="radio" name="kadoves" id="slaid1" checked>
-                <input type="radio" name="kadoves" id="slaid2">
-                <input type="radio" name="kadoves" id="slaid3">
-                <div class="kadoves">
-                    <label for="slaid1"></label>
-                    <label for="slaid2"></label>
-                    <label for="slaid3"></label>
-                </div>
-
-                <!-- картинки слайдера -->
-
-                <div class="adaptivSlayderlasekun">
-                    <div class="abusteku-deagulus">
-                        <img src="img/2 2539373.png" />
-                        <img src="img/Group 82.png" />
-                        <img src="img/2 2539373.png" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <!-- Это отвечает за правую часть сайта -->
+<!--а правую часть сайта -->
 
         <div class="rigth-s">
 
             <!-- форма входа -->
 
-            <form class="form_container">
+            <form action="mainAfterSignup.html" class="form_container">
 
                 <!-- заголовок формы -->
 
@@ -102,9 +73,9 @@
 
                 <!-- Login button -->
 
-                <a href="mainAfterSignup.html"><button type="submit" class="sign-in_btn">
+                <button type="submit" class="sign-in_btn">
                     <span>Log in</span>
-                </button></a>
+                </button>
 
                 <!-- контейнер --- or --- -->
 
@@ -113,36 +84,6 @@
                     <span>Or</span>
                     <hr class="line">
                 </div>
-
-                <!-- контейнер кнопок -->
-
-                <div class="or-sign-in-btn">
-
-                    <!-- логин кнопка google -->
-
-                    <button class="sign-in_ggl">
-                        <img src="img/Google.png" alt="">
-                        Google
-                    </button>
-
-                    <!-- логин кнопка gitlab -->
-
-                    <button  type="submit" class="sign-in_gitlab">
-                        <img src="img/vectors.png" alt="">
-                        <span>GitLab</span>
-                    </button>
-                </div>
-
-                <!-- нет аккаунта текст -->
-
-                <p class="note">Have no account yet?</p>
-
-                <!-- admin button -->
-
-                <a href="adminLogin.html"><button  type="submit" class="sign-in_admin">
-                    <span>Администрация</span>
-                </button>
-            </a>
 
                 <!-- back button -->
 

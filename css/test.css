@@ -28,6 +28,20 @@ body {
     margin: 20px;
 }
 
+.courses {
+    display: grid;
+    grid-template-areas:
+        "v l";
+    grid-template-columns: 3fr 2fr;
+}
+
+.video {
+    grid-area: "v";
+}
+
+.lessons {
+    grid-area: "l";
+}
 
 /* ----------------------------------------- */
 
@@ -64,19 +78,6 @@ a {
     margin-top: 30%;
 }
 
-.side_bar_general {
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-    background-color: white;
-    width: 110%;
-    border-radius: 20px 0 0 20px;
-}
-
-.side_bar_general p a {
-    color: #FB6D3A;
-}
-
 .side_bar_img {
     margin-left: 5%;
 }
@@ -86,16 +87,28 @@ a {
     font-size: 100%;
 }
 
-
 .side_bar_courses {
     display: flex;
     align-items: center;
     margin-left: 10%;
+    background-color: white;
+    width: 110%;
+    border-radius: 20px 0 0 20px;
+}
+
+.side_bar_courses p a {
+    color: #FB6D3A;
+}
+
+.side_bar_book {
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
     margin-top: 2%;
 }
 
 .support-img {
-    margin-top: 50%;
+    margin-top: 25%;
     align-items: center;
     justify-content: center;
 }
@@ -105,19 +118,19 @@ a {
     height: 100%;
 }
 
-.side_bar_timeTable{
+.side_bar_timeTable {
     display: flex;
     align-items: center;
     margin-left: 10%;
     margin-top: 2%;
-  }
-  
-  .side_bar_settings{
+}
+
+.side_bar_settings {
     display: flex;
     align-items: center;
     margin-left: 10%;
     margin-top: 2%;
-  }
+}
 
 
 /* SEARCH INPUT */
@@ -189,6 +202,7 @@ label {
     left: var(--inline-padding-of-input);
 }
 
+/* svg -- size */
 
 
 /* styling of close button */
@@ -264,103 +278,261 @@ input:-webkit-autofill:active {
     margin-left: 1%;
 }
 
-/* Training sectors */
-
-
-/* training_sectors_h2 */
-.training_sectors_h2 {
+.my-courses-h2 {
+    margin-top: 7%;
     margin-left: 5%;
 }
 
-/* training_sectors_images-style */
-.training_sectors_images {
+/* <!-- theme lesson --> */
+
+.theme {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+/* video_course */
+
+.video_course {
+    margin-left: 5%;
+}
+
+
+
+/* video button test */
+
+.video_course button {
+    width: 145px;
+    height: 35px;
+    border: none;
+    background: #1F4989;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.buttonNext {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    align-items: center;
 }
 
-/* training_sectors_images img style */
-.training_sectors_images img {
-    margin-left: 10%;
-    width: 80%;
-    height: 100%;
-    background-size: cover;
+.buttonNext a img {
+    width: 70%;
 }
 
-/* our courses */
+/* variant style */
 
-@-webkit-keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-
-    100% {
-        -webkit-transform: translateX(calc(-250px * 7));
-        transform: translateX(calc(-250px * 7));
-    }
+.variant {
+    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    width: 70%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+.variant p{
+    padding-right: 76%;
+}
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.checkbox input[type="checkbox"] {
+    opacity: 0;
 }
 
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-
-    100% {
-        -webkit-transform: translateX(calc(-250px * 7));
-        transform: translateX(calc(-250px * 7));
-    }
+.checkbox .checkmark {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
 }
 
-.slider {
-    background: pr;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 90%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 90%;
-    margin-bottom: 1%;
+.checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #fff;
+    border-color: #1F4989;
 }
-
-.slider::before,
-.slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  
+.checkbox input[type="checkbox"]:checked + .checkmark:after {
     content: "";
-    height: 90%;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #1F4989;
+    transition: transform 0.2s ease;
+    transform: scale(1);
+}
+  
+.checkbox .checkmark:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: scale(0);
+    transition: transform 0.2s ease;
 }
 
-.slider::after {
-    right: 0;
-    top: 0;
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
+.checkbox input[type="checkbox"]:checked .variant{
+    border: 1px solid #1F4989 !important;
+}
+  
+  
+/* lesson */
+
+.lessons-h2 {
+    font-weight: bold;
+    margin-top: 18%;
 }
 
-.slider::before {
-    left: 0;
-    top: 0;
-}
-
-.slider .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-    animation: scroll 40s linear infinite;
+.lessons {
+    margin-left: 20%;
     display: flex;
-    width: calc(250px * 14);
+    flex-direction: column;
 }
 
-.slider .slide {
-    height: 70%;
-}
-.side_bar_general {
-  display: flex;
+.element {
+    display: flex;
 }
 
+.elementText {
+    margin-top: 1%;
+    margin-left: 5%;
+}
 
+.elementText h3 {
+    font-size: 14px;
+    color: #181B1A;
+}
 
-.side_bar_courses {
-  display: flex;
+.elementText p {
+    margin-top: 1%;
+    color: #B3B6B6;
+    font-size: 10px;
+}
+
+.line {
+    border-bottom: 1px solid #F1F1EF;
+}
+
+.element-img {
+    margin-top: 5%;
+}
+
+/* lesson images */
+
+.lesson-img {
+    display: flex;
+    align-items: center;
+    margin-top: 40%;
+}
+
+.lesson-img img {
+    height: 90%;
+}
+
+.lesson-img-2 {
+    margin-left: 5%;
+}
+
+/* cards */
+
+.card {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+    height: 220px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    overflow: visible;
+   }
+   
+   .card .item {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .item:hover {
+    transform: scale(0.95);
+    transition: all 0.3s;
+   }
+   
+   .item svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 7px;
+   }
+   
+   .item--1 {
+    background: #c7c7ff;
+   }
+   
+   .item--2 {
+    background: #ffd8be;
+   }
+   
+   .item--3 {
+    background: #a9ecbf;
+   }
+   
+   .item--4 {
+    background: #f3bbe1;
+   }
+   
+   .quantity {
+    font-size: 25px;
+    font-weight: 600;
+   }
+   
+   .text {
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 600;
+   }
+   
+   .text--1 {
+    color: rgba(149,149,255,1);
+   }
+   
+   .text--2 {
+    color: rgba(252,161,71,1);
+   }
+   
+   .text--3 {
+    color: rgba(66,193,110,1);
+   }
+   
+   .text--4 {
+    color: rgba(220,91,183,1);
+   }
+
+/* next img */
+.nextBtn{
+    margin-top: 5%;
+    margin-left: 27%;
+}
+
+.nextBtn a img{
+    width: 10%;
+}
+
+#back{
+    transform: rotate(180deg);
 }

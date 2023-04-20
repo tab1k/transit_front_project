@@ -28,20 +28,6 @@ body {
     margin: 20px;
 }
 
-.courses {
-    display: grid;
-    grid-template-areas:
-        "v l";
-    grid-template-columns: 3fr 2fr;
-}
-
-.video {
-    grid-area: "v";
-}
-
-.lessons {
-    grid-area: "l";
-}
 
 /* ----------------------------------------- */
 
@@ -78,6 +64,19 @@ a {
     margin-top: 30%;
 }
 
+.side_bar_general {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    background-color: white;
+    width: 110%;
+    border-radius: 20px 0 0 20px;
+}
+
+.side_bar_general p a {
+    color: #FB6D3A;
+}
+
 .side_bar_img {
     margin-left: 5%;
 }
@@ -87,30 +86,14 @@ a {
     font-size: 100%;
 }
 
+
 .side_bar_courses {
     display: flex;
     align-items: center;
     margin-left: 10%;
-}
-
-.side_bar_book p a {
-    color: #FB6D3A;
-}
-
-.side_bar_book {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    width: 110%;
-    border-radius: 20px 0 0 20px;
-    margin-left: 7%;
     margin-top: 2%;
 }
 
-.side_bar_bookSvg{
-    margin-left: 7%;
-    margin-top: 2%;
-}
 .support-img {
     margin-top: 25%;
     align-items: center;
@@ -122,40 +105,78 @@ a {
     height: 100%;
 }
 
-.side_bar_timeTable {
+.side_bar_timeTable{
     display: flex;
     align-items: center;
     margin-left: 10%;
     margin-top: 2%;
-}
-
-.side_bar_settings {
+  }
+  
+  .side_bar_settings{
     display: flex;
     align-items: center;
     margin-left: 10%;
     margin-top: 2%;
-}
-
-/* this is a recreation of twitter search in css */
-
-.content-header {
+  }
+  /*content*/
+  p {
+    font-family: 'Poppins';
+  }
+  .add-course-menu{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .plus img{
+    width: 6%;
+    height: 6%;
+    justify-content: center;
+  }
+  .plus {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-}
+    margin-top: 10%;
+    margin-bottom: 6%;
+  }
+  .course-type {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   #left-img {
+    width: 4%;
+    height: 4%;
+    margin-right:10%;
+  }
+  #right-img{
+    width: 4%;
+    height: 4%;
+    margin-top: 1%;
+  }
+  .course {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 3% 5% 3% 5%;
+    margin-bottom: 10%;
+  }
+  .course p{
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 0;
 
-h1 {
-    margin-top: 5%;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-}
-
-.inputs {
+    color: #0067F5;
+    margin-right: 55%;
+  }
+  .inputs {
     display: flex;
     flex-direction: column;
-    margin-left: 25%;
+    margin-left: 1%;
 }
 
 .inputDiv {
@@ -168,12 +189,13 @@ h1 {
     font-size: 12px;
     color: #000000;
     margin-top: 2%;
+    font-family: 'Roboto';
 }
 
 .inputDiv input{
-    margin-top: 2%;
+    margin-top: 4%;
     max-width: 600px;
-    width: 70%;
+    width: 100%;
     outline: none;
     border-top: none;
     border-right: none;
@@ -181,13 +203,8 @@ h1 {
     border-bottom: 1px solid #0067F5
 }
 
-
-.buttonNext a img {
-    width: 5%;
-    transform: rotate(180deg);
-    margin-left: 4%;
-    margin-bottom: 5%;
-    margin-top: 3%;
+#special {
+    margin-top: 6%;
 }
 
 .submitButton{
@@ -200,10 +217,17 @@ h1 {
     margin-top: 5%;
     background: #0078C2;
     border-radius: 14px;
-    width: 200px;
-    height: 40px;
+    width: 60%;
+    height:40px;
     border: none;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
+    margin-bottom: 8%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+/* or 120% */
 }

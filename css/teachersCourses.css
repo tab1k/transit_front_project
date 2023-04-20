@@ -95,7 +95,7 @@ a {
 }
 
 .support-img {
-    margin-top: 50%;
+    margin-top: 25%;
     align-items: center;
     justify-content: center;
 }
@@ -118,13 +118,62 @@ a {
     margin-left: 10%;
     margin-top: 2%;
   }
+  /*content*/
+  p {
+    font-family: 'Poppins';
+  }
+  .my-courses{
+    width: 100%;
+    display: flex;
+    margin-bottom: 7%;
+  }
+  .course img {
+    width: 15%;
+    height: 60%;
+    margin-right:12%;
+      }
+    .course {
+    display: flex;
+    background: #1F4989;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 13px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+padding: 2% 8% 0 2%;
+vertical-align: middle;
+ }
+ .ml {
+    margin-left: 5%;
+ }
+ .course p{
+    margin-top: 0;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 23px;
+text-align: center;
 
+color: #FFFFFF;
 
-/* SEARCH INPUT */
+ }
+ .courses {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+ }
+ #p {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 42px;
+/* identical to box height */
+display: flex;
+align-items: center;
 
-
-/* this is a recreation of twitter search in css */
-.content-header {
+ }
+ /*поисковое меню*/
+ .content-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,6 +202,7 @@ a {
     isolation: isolate;
     width: 90%;
     height: 37px;
+    margin-bottom: 5%;
 }
 
 /* a fancy bg for showing background and border when focus. */
@@ -256,111 +306,36 @@ input:-webkit-autofill:active {
 
 .notification-img {
     margin-left: 1%;
+    transform: translateY(-60%);
 }
 
 /* users-img */
 
 .user-img {
     margin-left: 1%;
+    transform: translateY(-80%);
 }
-
-/* Training sectors */
-
-
-/* training_sectors_h2 */
-.training_sectors_h2 {
-    margin-left: 5%;
-}
-
-/* training_sectors_images-style */
-.training_sectors_images {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* training_sectors_images img style */
-.training_sectors_images img {
-    margin-left: 10%;
-    width: 80%;
-    height: 100%;
-    background-size: cover;
-}
-
-/* our courses */
-
-@-webkit-keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-
-    100% {
-        -webkit-transform: translateX(calc(-250px * 7));
-        transform: translateX(calc(-250px * 7));
-    }
-}
-
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-
-    100% {
-        -webkit-transform: translateX(calc(-250px * 7));
-        transform: translateX(calc(-250px * 7));
-    }
-}
-
-.slider {
-    background: pr;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 90%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 90%;
-    margin-bottom: 1%;
-}
-
-.slider::before,
-.slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 90%;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-}
-
-.slider::after {
-    right: 0;
-    top: 0;
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-}
-
-.slider::before {
-    left: 0;
-    top: 0;
-}
-
-.slider .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
-}
-
-.slider .slide {
-    height: 70%;
-}
-.side_bar_general {
-  display: flex;
-}
-
-
-
-.side_bar_courses {
-  display: flex;
-}
+.student-description {
+    align-items: center;
+    margin-bottom: 5%;
+ }
+ /*как я понял курсы либо же ученики*/
+ .description {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    width: 70%;
+    height: 35%;
+    margin-bottom: 3%;
+    margin-left: 1%;
+ }
+ .description p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 18px;
+    color: #00538E;
+    padding: 1.5% 0 1.5% 5%;
+    vertical-align: middle;
+ }
