@@ -1,0 +1,351 @@
+/* BODY */
+
+body {
+    background-color: #22549E;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------- */
+
+/* ALL PAGE */
+
+.all_page {
+    width: 100%;
+    display: flex;
+}
+
+.all_page .side_bar {
+    width: 20%;
+    margin: 20px 0px 20px 20px;
+}
+
+.all_page .content {
+    background-color: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 77%;
+    margin: 20px;
+}
+
+
+/* ----------------------------------------- */
+
+/* SIDE BAR */
+
+.side_bar {
+    text-align: center;
+
+}
+
+/* SIDE BAR - LOGO */
+
+a {
+    color: white;
+    font-family: Roboto;
+    text-decoration: none;
+}
+
+.side_bar_logo_settings {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.side_bar_logo_text {
+    margin-left: 5%;
+    font-size: 24px;
+    font-weight: medium;
+}
+
+/* SIDE BAR - LINKS */
+
+.side_bar_links {
+    margin-top: 30%;
+}
+
+.side_bar_general {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    background-color: white;
+    width: 110%;
+    border-radius: 20px 0 0 20px;
+}
+
+.side_bar_general p a {
+    color: #FB6D3A;
+}
+
+.side_bar_img {
+    margin-left: 5%;
+}
+
+.side_bar_text {
+    margin-left: 5%;
+    font-size: 100%;
+}
+
+
+.side_bar_courses {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.support-img {
+    margin-top: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-img img {
+    width: 60%;
+    height: 100%;
+}
+
+.side_bar_timeTable {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.side_bar_settings {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+/*content*/
+
+.plus {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 6%;
+    margin-top: 2%;
+}
+
+.redaction-menu {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*courses*/
+.redaction-courses {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#left-img {
+    width: 6%;
+    height: 6%;
+    margin-right: 1%;
+}
+
+.right-img-v {
+    width: 4%;
+    height: 4%;
+    margin-top: 0.5%;
+    transform: rotate(180deg);
+    margin-left: 57%;
+}
+
+.right-img-a {
+    width: 4%;
+    height: 4%;
+    margin-top: 1%;
+    margin-left: 88%;
+}
+
+.a {
+    margin-left: 93%;
+}
+
+#left-img-o {
+    width: 6%;
+    height: 6%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.right-img-o {
+    width: 4%;
+    height: 4%;
+    margin-top: 1%;
+    margin-left: 93%;
+}
+
+.right-img-o1 {
+    width: 4%;
+    height: 4%;
+    margin-top: 1%;
+    margin-left: 93%;
+}
+
+.aviation-course {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 2% 0 0 2%;
+    margin-bottom: 3%;
+}
+
+.virtual-course {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 2% 4% 0 2%;
+    margin-bottom: 3%;
+}
+
+.expandable {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 2% 4% 0 2%;
+    margin-bottom: 3%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.industral,
+.aviation,
+.virtual,
+.other {
+    display: flex;
+}
+
+.aviation-course p,
+.virtual-course p,
+.expandable p {
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 1%;
+    color: #0067F5;
+}
+
+
+.expandable1 {
+    width: 99%
+}
+
+.expandable1 .expandable-content p {
+    margin-top: 1%;
+}
+
+.expandable2 {
+    width: 95%;
+}
+
+.expandable2 .expandable-content p {
+    margin-top: 1%;
+}
+
+.expandable .expandable-content p {
+    margin-top: 1%;
+
+    white-space: pre-wrap
+
+}
+
+.expandable-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1%;
+    white-space: pre-wrap;
+}
+
+.expandable-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    display: flex;
+}
+
+.expandable-content img {
+    margin-bottom: 2%;
+}
+
+.expandable.open .expandable-content {
+    height: auto;
+}
+
+.expandable1.open .expandable-content {
+    height: auto;
+}
+
+.expandable2.open .expandable-content {
+    height: auto;
+}
+
+.expandable.open .expandable-header i img {
+    transform: rotate(180deg);
+    width: 4%;
+    height: 4%;
+}
+
+.expandable1.open .expandable-header i img {
+    transform: rotate(180deg);
+    width: 4%;
+    height: 4%;
+}
+
+.expandable2.open .expandable-header i img {
+    transform: rotate(180deg);
+    width: 4%;
+    height: 4%;
+}
+
+
+.expandable:last-child {
+    margin-bottom: 9%;
+}
+
+hr {
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button1 {
+    width: 100%;
+    background: #0078C2;
+    border-radius: 14px;
+    border: none;
+    height: 40px;
+    color: #fff;
+    margin-bottom: 15%;
+    font-size: 15px;
+}
+
+.other-courses{
+    margin-top: 6%;
+}
+.notification{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 74.5%;
+    margin-bottom: 3%;
+}
+.back{
+    transform: rotate(180deg);
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
