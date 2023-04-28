@@ -313,7 +313,7 @@ a {
 /* задаем стиль кнопке log in Администрация*/
 
 .sign-in_admin{
-    width: 100%;
+    width: 400px;
     height: 40px;
     gap: 10px;
     background: #ffffff;
