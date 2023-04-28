@@ -67,7 +67,7 @@ a {
 .side_bar_general {
     display: flex;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 11%;
     background-color: white;
     width: 110%;
     border-radius: 20px 0 0 20px;
@@ -78,7 +78,7 @@ a {
 }
 
 .side_bar_img {
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .side_bar_text {
@@ -129,6 +129,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 2%;
+    margin-left: 4%;
 }
 
 .form {

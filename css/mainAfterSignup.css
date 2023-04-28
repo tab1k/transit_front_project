@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-h1 {}
+
 
 /* ----------------------------------------- */
 
@@ -132,6 +132,8 @@ a {
     align-items: center;
     margin-top: 2%;
 }
+
+
 
 .form {
     --input-text-color: #1b9bee;

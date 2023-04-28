@@ -525,3 +525,9 @@ a {
     background-color: transparent;
     margin-bottom: 2%;
 }
+.back {
+    margin-top: 1.5%;
+    margin-left: 4%;
+    transform: rotate(180deg);
+    margin-bottom: 3%;
+}

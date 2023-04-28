@@ -169,7 +169,6 @@ a {
     font-size: 16px;
     line-height: 21px;
     margin-bottom: 0;
-
     color: #0067F5;
     margin-right: 55%;
   }
@@ -202,7 +201,6 @@ a {
     border-left:  none;
     border-bottom: 1px solid #0067F5
 }
-
 #special {
     margin-top: 6%;
 }
@@ -231,3 +229,4 @@ a {
     line-height: 18px;
 /* or 120% */
 }
+  
