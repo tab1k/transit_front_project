@@ -43,6 +43,12 @@ body {
     grid-area: "l";
 }
 
+.quiz {
+    margin-left: 3%;
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+
 /* ----------------------------------------- */
 
 /* SIDE BAR */
@@ -103,7 +109,7 @@ a {
 .side_bar_book {
     display: flex;
     align-items: center;
-    margin-left: 7.5%;
+    margin-left: 7%;
     margin-top: 2%;
 }
 
@@ -136,12 +142,11 @@ a {
 /* SEARCH INPUT */
 
 
-/* this is a recreation of twitter search in css */
 .content-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .form {
@@ -166,6 +171,7 @@ a {
     isolation: isolate;
     width: 90%;
     height: 37px;
+    margin-left: 2%;
 }
 
 /* a fancy bg for showing background and border when focus. */
@@ -202,7 +208,6 @@ label {
     left: var(--inline-padding-of-input);
 }
 
-/* svg -- size */
 
 
 /* styling of close button */
@@ -272,14 +277,11 @@ input:-webkit-autofill:active {
     margin-left: 1%;
 }
 
-/* users-img */
 
-.user-img {
-    margin-left: 1%;
-}
 
 .my-courses-h2 {
-    margin-top: 7%;
+    padding-top: 5%;
+    margin-top: 10%;
     margin-left: 5%;
 }
 
@@ -296,107 +298,74 @@ input:-webkit-autofill:active {
     margin-left: 5%;
 }
 
-/* video-style */
+/* variant style */
 
-embed {
-    height: 350px;
-    width: 100%;
-    background: #FFFFFF;
-    border: 1px solid #022B69;
-    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+.variant {
+    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
-    margin-bottom: 5%;
-}
-
-/* video button test */
-
-.video_course button {
-    width: 145px;
-    height: 35px;
-    border: none;
-    background: #1F4989;
-    border-radius: 7px;
-    color: #fff;
-}
-
-.buttonNext {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5%;
-    align-items: center;
-}
-
-.buttonNext a img {
-    width: 70%;
-}
-
-/* comments */
-
-.card {
-    width: 100%;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5%;
-}
-
-.chat-header {
-    background-color: #22549E;
-    color: #fff;
-    padding: 10px;
-    font-size: 18px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.chat-window {
-    height: 220px;
-    overflow-y: scroll;
-}
-
-.message-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.chat-input {
+    width: 90%;
+    height: 40px;
     display: flex;
     align-items: center;
-    padding: 10px;
-    border-top: 1px solid #ccc;
+    margin-top: 2%;
 }
 
-.message-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 5px;
-    font-size: 14px;
+.variant p {
+    padding-right: 80%;
 }
 
-.send-button {
-    border: none;
-    outline: none;
-    background-color: #333;
-    color: #fff;
-    font-size: 14px;
-    padding: 5px 10px;
+.checkbox {
+    display: inline-flex;
+    align-items: center;
     cursor: pointer;
-    margin-left: 15px;
 }
 
-.send-button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+.checkbox input[type="checkbox"] {
+    opacity: 0;
 }
-.type-button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+
+.checkbox .checkmark {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
 }
+
+.checkbox input[type="checkbox"]:checked+.checkmark {
+    background-color: #fff;
+    border-color: #1F4989;
+}
+
+.checkbox input[type="checkbox"]:checked+.checkmark:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #1F4989;
+    transition: transform 0.2s ease;
+    transform: scale(1);
+}
+
+.checkbox .checkmark:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+}
+
+.checkbox input[type="checkbox"]:checked .variant {
+    border: 1px solid #1F4989 !important;
+}
+
 
 /* lesson */
 
@@ -415,36 +384,172 @@ embed {
     display: flex;
 }
 
-.elementText{
+.elementText {
     margin-top: 1%;
     margin-left: 5%;
 }
-.elementText h3{
+
+.elementText h3 {
     font-size: 14px;
     color: #181B1A;
 }
-.elementText p{
+
+.elementText p {
     margin-top: 1%;
     color: #B3B6B6;
     font-size: 10px;
 }
-.line{
+
+.line {
     border-bottom: 1px solid #F1F1EF;
 }
-.element-img{
+
+.element-img {
     margin-top: 5%;
 }
 
 /* lesson images */
 
-.lesson-img{
+.lesson-img {
     display: flex;
     align-items: center;
-    margin-top: 40%;
+    margin-top: 10%;
 }
-.lesson-img img{
+
+.lesson-img img {
     height: 90%;
 }
-.lesson-img-2{
+
+.lesson-img-2 {
     margin-left: 5%;
 }
+
+/* next img */
+.nextBtn {
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+.nextBtn a img {
+    width: 13%;
+}
+
+#back {
+    transform: rotate(180deg);
+}
+
+.back {
+    transform: rotate(180deg);
+    margin-top: 30%;
+    margin-left: 5%;
+}
+
+/* Important styles */
+#toggle {
+    display: block;
+    width: 28px;
+    height: 30px;
+    margin: 30px auto 10px;
+  }
+  
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  
+  #toggle span:after {
+    top: 9px;
+  }
+  
+  #toggle span {
+    position: relative;
+    display: block;
+  }
+  
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 100%;
+    height: 4px;
+    background-color: #77adff;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+  
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent;
+  }
+  
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  
+  #toggle.on+#menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* menu appearance*/
+  #menu {
+    position: absolute;
+    right: 0%;
+    color: #999;
+    width: 10%;
+    padding: 10px;
+    margin: auto;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+    /* just for this demo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+  }
+  
+  #menu:after {
+    position: absolute;
+    top: -15px;
+    left: 95px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+  }
+  
+  ul,
+  li,
+  li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    padding: 5px;
+    color: #888;
+    text-decoration: none;
+    transition: all .2s;
+  }
+  
+  li a:hover,
+  li a:focus {
+    background: #22549E;
+    color: #fff;
+  }
+  
+  .burger {
+    margin-left: 1%;
+  }
